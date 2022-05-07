@@ -14,8 +14,8 @@ const checkWin = () => {
     wins.forEach(e => {
         // console.log(boxTexts[e[0]].innerText, boxTexts[e[1]].innerText, boxTexts[e[2]].innerText)
         if ((boxTexts[e[0]].innerText === boxTexts[e[1]].innerText) && (boxTexts[e[2]].innerText === boxTexts[e[1]].innerText) && (boxTexts[e[1]].innerText !== '')) {
-            if (boxTexts[e[0]].innerText === 'X') { document.querySelector('.info').innerText = 'Khangura Won' } else {
-                document.querySelector('.info').innerText = 'Pulkit Won'
+            if (boxTexts[e[0]].innerText === 'X') { document.querySelector('.info').innerText = 'Player1' } else {
+                document.querySelector('.info').innerText = 'Player2'
             }
             gameover = true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = '700px';
